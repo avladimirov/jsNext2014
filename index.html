@@ -1,0 +1,610 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>jsNext - You don`t need a framework for that!</title>
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+        <link rel="stylesheet" href="css/theme/night.css">
+        <link rel="stylesheet" href="css/zenburn.css">
+	</head>
+	<body>
+
+		<div class="reveal">
+			<div class="slides">
+
+                <section data-background="img/bgr-home.png" data-background-size="cover" >
+                    <h5>lang: [BG] | [EN]</h5>
+				</section>
+                
+                 <section data-background="img/bgr-home.png" data-background-size="cover">
+					<h2>var title = "iPhone 6 for Android lovers"</h2>
+				</section>
+                
+                <section data-background="img/bgr-home.png" data-background-size="cover">
+					<h2>var title = "You don`t need a framework for that!"</h2>
+				</section>
+                
+                <section>
+                    <pre><code clas="javascript" style="transform:scale(2,2);">
+                        var author = {  
+                                        name: 'Adriyan Vladimirov',
+                                        company: 'SBTech',
+                                        roles: ['TL/Manager', 'Programmer'],
+                                        technologies: ['web', '.NET']
+                                     } 
+                    </code></pre>
+				</section>
+                
+                <section>
+					<h2>Agenda</h2>
+                    <ul>
+                        <li>Frameworks and Libraries</li>
+                        <li>So you have to pick one?</li>
+                        <li>Layout and interactions without a single JS line</li>
+                        <li>Summary</li>
+                    </ul>
+				</section>
+                
+                 <!-- Horizontal slides -->
+                
+                <section>
+                    
+                    <section>
+					   <h2>What is a JavaScript Library/Framework?</h2>
+                    </section>
+                    
+                    <section>
+                        <h2>Everything is a library</h2>
+                        <p>Pre-written javascript that solves a specific need</p>
+                        <pre style="text-align:center;">wikipedia /JavaScript_framework forwards to .. library</pre>
+                    </section>
+
+                    <section>
+                        <h2>Framework is about design</h4>
+                        <p>It cannot solve a real task.</p>
+                    </section>
+                    
+                    <section>
+                        <h2>Framework is full-stack</h2>
+                        <ul>
+                            <li>Flow of control</li>
+                            <li>Design patterns</li>
+                            <li>Coding standards</li>
+                            <li>Default behaviour</li>
+                            <li>Extensibility</li>
+                        </ul>
+                    </section>
+                    
+                    <section>
+                        <h3>Library to a Framework is like</h3>
+                        <h3>Brick is to an Arcitectural Plan</h3>
+                    </section>
+                    
+				</section>
+                
+                <!-- Horizontal slides -->
+                
+                <section>
+                    
+                    <section>
+					   <h2>Why are they so many?</h2>
+                    </section>
+                    
+                    <section>
+					   <h2>How many?</h2>
+                        <img class="stretch" src="img/trends/js_lib_tag_cloud.jpg" />
+                    </section>
+                    
+                    <section>
+                        <h2>Wiki library listing - 70+ in 10 categories</h2>
+                        <div class="stretch">
+                            <iframe webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen="true" src="http://en.wikipedia.org/wiki/List_of_JavaScript_libraries" height="100%" width="100%"></iframe>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2>Wiki framework comparison</h2>
+                        <img class="stretch" src="img/tech/jsFrameworks-features.jpg" />
+                    </section>
+
+                    <section>
+                        <h2>GitHub repos in javascript</h2>
+                        <img class="stretch" src="img/trends/github-js_repos.jpg" />
+                    </section>
+                    
+                    <section>
+                        <h3>Client side 'web' applications have always been here</h3>
+                    </section>
+                   
+                    <section>
+                        <h3>Tired of this?</h3>
+                        <img class="stretch" src="img/tech/flash_installer.png" />
+                    </section>
+                    
+                    <section>
+                        <h3>How about this?</h3>
+                        <img class="stretch" src="img/tech/java-runtime-install.jpg" />
+                    </section>
+                    
+                    <section>
+                        <h3>That was a promising one..</h3>
+                        <img class="stretch" src="img/tech/silverlight.jpg" />
+                    </section>
+                    
+                    <section>
+                        <h3>Yet what about global populatiry for last decade (by TIOBE)</h3>
+                        <img class="stretch" src="img/trends/25years_programming_lang_TIOBE.jpg" />
+                    </section>
+                    
+                     <section>
+                        <h3>Google Search trends for last 10 years</h3>
+                        <img class="stretch" src="img/trends/10y_lang_googleTrends.jpg" />
+                    </section>
+                    
+                    <section>
+                        <h3>However - last year in BG</h3>
+                        <img class="stretch" src="img/trends/1y_job_langs_SV.jpg" />
+                    </section>
+                    
+                    <section>
+                        <h2>Increased adoption of W3C specifications</h2>
+                    </section>
+                    
+                    <section>
+                        <h2>Chromium features adoption</h2>
+                        <div class="stretch">
+                            <iframe webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen="true" src="https://www.chromestatus.com/features" height="100%" width="100%"></iframe>
+                        </div>
+                    </section>
+                    
+                    <section>
+                        <h2>Leads to new libraries</h2>
+                        <p>low level specs to high level API</h2>
+                    </section>
+                    
+                    <section>
+                        <h2>Growing codebase</h2>
+                        <p>Good projects evolve but get overcomplicated</p>
+                    </section>
+                    
+                    <section>
+                        <h2>Leads to new smaller replacements</h2>
+                        <ul>
+                            <li>Modernizr -> head.js</li>
+                            <li>Moment.js -> Xdate.js</li>
+                            <li>...</li>
+                        </ul>
+                    </section>
+                    
+                    <section>
+                        <h2>.. and many others</h2>
+                        <div class="stretch">
+                            <iframe webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen="true" src="http://microjs.com/" height="100%" width="100%"></iframe>
+                        </div>
+                    </section>
+                    
+                    <section>
+                        <h2>Not invented here - paradigm</h2>
+                        <ul>
+                            <li>Lack of control and prediction</li>
+                            <li>High expectations of quality and support</li>
+                            <li>Psychological phenomenon - unwillingness to value the work of others and adopt anywhing with foreign origin</li>
+                        </ul>
+                    </section>
+				</section>
+                
+                <!-- Horizontal slides -->
+                
+                <section>
+                    
+                    <section>
+					   <h2>Why is that a problem?</h2>
+                    </section>
+                    
+                    <section>
+                        <h3>Paradox of choice</h3>
+                        <p>Elliminating choices reduces anxiety and increases turnover</p>
+                    </section>
+                    
+                    <section>
+                        <h3>Choice and Happiness</h3>
+                        <ul>
+                            <li>Abundance of choice often leads to depression</li>
+                            <li>One needs to be satisfied with his choice</li>
+                            <li>Spontaneous selection brings more satisfaction</li>
+                        </ul>
+                    </section>
+                    
+                    <section>
+                        <h3>Freedom or Commitment</h3>
+                        <p>Too many options will require more analysis and therefore I quit</p>
+                    </section>
+                    
+                    <section>
+                        <h3>Missed opportunities</h3>
+                        <p>Considering trade-offs brings negative emotion</p>
+                    </section>
+                    
+                    <section>
+                        <h3>On overall this leads to lower adoption of existing solutions.</h3>
+                    </section>
+                    
+				</section>
+                
+                <!-- Horizontal slides -->
+                
+                <section>
+                    
+					<section>
+                        <h2>What others do?</h2>
+                    </section>
+                    
+                    <section>
+                        <h2>Raise of the giants</h2>
+                        <ul>
+                            <li>Google - angular.js / WebComponents</li>
+                            <li>Microsoft - knockout.js / TypeScript</li>
+                            <li>Twitter - Bootstrap Platform</li>
+                            <li>Adobe - WebPlatform / Edge Animations</li>
+                            <li>SAP - OpenUI</li>
+                        </ul>
+                    </section>
+                    
+                    <section>
+                        <h2>Going Open Source</h2>
+                        <p>Even .NET is following..</p>
+                    </section>
+                    
+                     <section>
+                        <h2>Listen to the community</h2>
+                    </section>
+				</section>
+                
+                <!-- Horizontal slides -->
+                
+                <section>
+                    
+                    <section>
+                        <h2>So what do we do?</h2>
+                        <p>when we get a new task..</p>
+                    </section>
+                        
+                    <section>
+                        <h2>We analyze and rationalize</h2>
+                        <p>Weighting the options to integrate a library or go from scratch</p>
+                    </section>
+                        
+                    <section>
+                        <h2>What to consider?</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td><b>Pros</b></td>
+                                    <td><b>Cons</b></td>
+                                </tr>
+                            </thead>
+                            <tr><td>Solve common problems</td><td>API overload</td></tr>
+                            <tr><td>Minimize time & effort</td><td>Learning curve</td></tr>
+                            <tr><td>Browser coverage</td><td>Performance overhead</td></tr>
+                            <tr><td>Maintenance & Support</td><td>Customizations effort</td></tr>
+                            <tr><td>Consistency in: coding & design</td><td>No control over the internals (fork it)</td></tr>
+                        </table>
+                    </section>
+                    
+                    <section>
+                        <h2>What to look for?</h2>
+                        <ul>
+                            <li>Task(s) correlation</li>
+                            <li>Documentation & Roadmap</li>
+                            <li>Community & Support</li>
+                        </ul>
+                    </section>
+                        
+                    <section>
+                        <h2>Arguable sides</h2>
+                        <ul>
+                            <li>Transport (size) & load time overhead (initialization)</li>
+                            <li>Performance overhead</li>
+                            <li>Evolution - versioning</li>
+                        </ul>
+                    </section>
+                    
+                    <section>
+                        <h3>How to find a good one?</h3>
+                        <img class="stretch" src="img/trends/google-search_fw.jpg" />
+                    </section>    
+                    
+                    <section>
+                        <h2>Relevancy check</h2>
+                        <img class="stretch" src="img/trends/buildWith_jstrends_lastweek.jpg" />
+                    </section>
+                        
+                    <section>
+                        <h2>Most reliable - hosted on CDNs</h2>
+                        <img class="stretch" src="img/trends/googleCDN_libs.jpg" />
+                    </section>
+                        
+                     <section>
+                        <h2>Most reliable - hosted on CDNs</h2>
+                        <img class="stretch" src="img/trends/microsoft_CDN-libs.jpg" />
+                    </section>
+                        
+				</section>
+                
+                <!-- Horizontal slides -->
+                
+                <section>
+                    
+                    <section>
+					   <h2>What else is there?</h2>
+                    </section>
+                    
+                    <section>
+                         <h2>Interaction and dynamics</h2>
+                    </section>
+                    
+                    <section>
+                        <h2>Interaction is switching between visual states</h2>
+                    </section>
+                    
+                    <section>
+                        <img class="stretch" src="img/caniuse/css3transforms.jpg" />
+                    </section>
+                        
+                    <section>
+                        <img class="stretch" src="img/caniuse/css3animations.jpg" />
+                    </section>
+                    
+                    <section>
+                        <h2>Using pseudoes to separate states</h2>
+                        <p>In combination with ~ and + to operate on DOM Tree</p>
+                    </section>
+                    
+                    <section>
+                        <h2>:checked and mate</h2>
+                        <p>Checkboxes & radiobuttons</p>
+                    </section>
+                    
+                    <section>
+                        <h2>Layout Transitions</h2>
+                        <p data-height="600" data-theme-id="0" data-slug-hash="mFrAj" data-default-tab="result" data-user="SitePoint" class='codepen'>See the Pen <a href='http://codepen.io/SitePoint/pen/mFrAj/'>Alternative Layout Transitions with Pure CSS</a> by SitePoint (<a href='http://codepen.io/SitePoint'>@SitePoint</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+                    </section>
+                    
+                    <section>
+                        <h2>CSS Slide Nav</h2>
+                        <p data-height="600" data-theme-id="0" data-slug-hash="wqnxg" data-default-tab="result" data-user="SitePoint" class='codepen'>See the Pen <a href='http://codepen.io/SitePoint/pen/wqnxg/'>Pure CSS Slide Nav</a> by SitePoint (<a href='http://codepen.io/SitePoint'>@SitePoint</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+                    </section>
+                    
+                    <section>
+                        <h2>Show/Hide content</h2>
+                        <p data-height="600" data-theme-id="0" data-slug-hash="fgvsA" data-default-tab="result" data-user="trevanhetzel" class='codepen'>See the Pen <a href='http://codepen.io/trevanhetzel/pen/fgvsA/'>CSS Only Content Toggle</a> by Trevan Hetzel (<a href='http://codepen.io/trevanhetzel'>@trevanhetzel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+                    </section>
+                
+                    <section>
+                        <h2>:target</h2>
+                        <p>Activated on an element when the URL hash is the same as an element’s ID</p>
+                        <br />
+                        <pre>http://localhost/index#jsnext</pre>
+                        <pre><code>#jsnext:target { color: orange; }</code></pre>
+                    </section>
+                    
+                    <section>
+                        <h2>Modals with :target</h2>
+                        <p data-height="600" data-theme-id="0" data-slug-hash="HFlGA" data-default-tab="result" data-user="trevanhetzel" class='codepen'>See the Pen <a href='http://codepen.io/trevanhetzel/pen/HFlGA/'>CSS Modal</a> by Trevan Hetzel (<a href='http://codepen.io/trevanhetzel'>@trevanhetzel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+                    </section>
+                    
+                     <section>
+                        <h2>Slideout menu</h2>
+                        <p data-height="600" data-theme-id="0" data-slug-hash="BIyqx" data-default-tab="result" data-user="trevanhetzel" class='codepen'>See the Pen <a href='http://codepen.io/trevanhetzel/pen/BIyqx/'>CSS Off-Canvas w/ :target</a> by Trevan Hetzel (<a href='http://codepen.io/trevanhetzel'>@trevanhetzel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+                    </section> 
+
+                    <section>
+                        <h2>Not yet recommended</h2>
+                        <ul>
+                            <li>Complex and fragile CSS</li>
+                            <li>Difficult to maintain</li>
+                            <li>Remember separation of concerns</li>
+                        </ul>
+                        <br />
+                        <p>Even though transitions and more performant than absolute alignments</p>
+                    </section>
+                    
+                    <section>
+                        <h2>Layouting</h2>
+                        <p>boostrap css anyone?</p>
+                    </section>
+                        
+                    <section>
+                        <h2>Flexbox</h2>
+                        <img class="stretch" src="img/caniuse/flexbox.jpg" />
+                    </section>
+                    
+                    <section>
+                        <h2>Layout mastery</h2>
+                        <img class="stretch" src="img/tech/flexbox_features.jpg" />
+                    </section>
+                    
+                    <section>
+                        <h2>Holly Grail</h2>
+                        <div class="stretch">
+                            <p data-height="600" data-theme-id="0" data-slug-hash="qIAwr" data-default-tab="result" data-user="HugoGiraudel" class='codepen'>See the Pen <a href='http://codepen.io/HugoGiraudel/pen/qIAwr/'>Demo Flexbox 3</a> by Hugo Giraudel (<a href='http://codepen.io/HugoGiraudel'>@HugoGiraudel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+                        </div>
+                    </section>
+                    
+                    <section>
+                        <h2>Flexible Navigation</h2>
+                        <p data-height="600" data-theme-id="0" data-slug-hash="FAbpm" data-default-tab="result" data-user="chriscoyier" class='codepen'>See the Pen <a href='http://codepen.io/chriscoyier/pen/FAbpm/'>Bar Navigation with Flexbox and SVG icons</a> by Chris Coyier (<a href='http://codepen.io/chriscoyier'>@chriscoyier</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+                    </section>
+                    
+                     <!-- flex demo -->
+                    
+                    <section>
+                        <h2>Quick and Dirty</h2>
+                        <div class="stretch">
+                            <iframe webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen="true" src=" http://youmightnotneedjquery.com/" height="100%" width="100%"></iframe>
+                        </div>
+                    </section>
+                        
+				</section>
+                
+                <!-- Horizontal slides -->
+                
+                <section>
+                    
+                    <section>
+                        <h2>Takeaway</h2>
+                        <p>A quick summary</p>
+                    </section>
+                    
+                    <section>
+                        <h2>Whenever possible - </h2>
+                        <h2>learn and use some popular framework</h2>
+                        <ul>
+                            <li>Best approach to understand Design Patterns</li>
+                            <li>Easier to land a job</li>
+                        </ul>
+                    </section>
+                    
+                    <section>
+                        <h2>Whenever capable - </h2>
+                        <h2>build and share yours</h2>
+                        <ul>
+                            <li>Research alternatives</li>
+                            <li>Document & Support it</li>
+                        </ul>
+                    </section>
+                    
+                    <section>
+                        <h2>Whenever curious - </h2>
+                        <h2>research alternatives</h2>
+                        <ul>
+                            <li>Make better decisions & predictions</li>
+                            <li>Nice discussion topics with colleagues</li>
+                        </ul>
+                    </section>
+                    
+                </section>
+                   
+                 <!-- Horizontal slides -->
+                        
+                <section>
+                    
+                    <section>
+                        <h2>Questions?</h2>
+                        <p>No time left :(</p>
+                    </section>
+                    
+                    <section>
+                        <h2>What is used to build this presentation?</h2>
+                        <ul>
+                            <li>Reveal.js</li>
+                            <li>head.js</li>
+                            <li>highlight.js</li>
+                            <li>markdown.js</li>
+                            <li>zoom.js</li>
+                        </ul>
+                    </section>
+                </section>
+                        
+                 <section>
+                    <h2>Thank you!</h2>
+                </section>
+			</div>
+
+		</div>
+
+        <script src="js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+        <script async src="http://codepen.io/assets/embed/ei.js"></script>
+
+		<script>
+
+			Reveal.initialize({
+
+                // Display controls in the bottom right corner
+                controls: true,
+
+                // Display a presentation progress bar
+                progress: true,
+
+                // Display the page number of the current slide
+                slideNumber: false,
+
+                // Push each slide change to the browser history
+                history: false,
+
+                // Enable keyboard shortcuts for navigation
+                keyboard: true,
+
+                // Enable the slide overview mode
+                //overview: true,
+
+                // Vertical centering of slides
+                //center: true,
+
+                // Enables touch navigation on devices with touch input
+                touch: false,
+
+                // Loop the presentation
+                loop: false,
+
+                // Change the presentation direction to be RTL
+                rtl: false,
+
+                // Turns fragments on and off globally
+                fragments: true,
+
+                // Flags if the presentation is running in an embedded mode,
+                // i.e. contained within a limited portion of the screen
+                embedded: false,
+
+                // Number of milliseconds between automatically proceeding to the
+                // next slide, disabled when set to 0, this value can be overwritten
+                // by using a data-autoslide attribute on your slides
+                autoSlide: 0,
+
+                // Stop auto-sliding after user input
+                autoSlideStoppable: true,
+
+                // Enable slide navigation via mouse wheel
+                mouseWheel: false,
+
+                // Hides the address bar on mobile devices
+                hideAddressBar: true,
+
+                // Opens links in an iframe preview overlay
+                previewLinks: false,
+
+                // Transition style
+                transition: 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+                // Transition speed
+                transitionSpeed: 'fast', // default/fast/slow
+
+                // Transition style for full page slide backgrounds
+                backgroundTransition: 'default', // default/none/slide/concave/convex/zoom
+
+                // Number of slides away from the current that are visible
+                viewDistance: 3,
+
+                // Parallax background image
+                parallaxBackgroundImage: 'img/bgr-default2.png', // e.g. "'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'"
+
+                // Parallax background size
+                parallaxBackgroundSize: 'cover', // CSS syntax, e.g. "2100px 900px"
+                
+                dependencies: [
+					{ src: 'js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/notes/notes.js' }
+				]
+
+            });
+
+		</script>
+
+	</body>
+</html>
